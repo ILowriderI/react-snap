@@ -19,16 +19,21 @@
   transform: scale(1);
 }
 .modal_content {
+  display: flex;
   border: 2px solid #ff9770;
   border-radius: 15px;
   padding: 20px;
   background-color: #370617;
   height: 50%;
-  width: 50%;
+  width: 70%;
   position: relative;
 }
 
 .text {
+  @media  (max-width: 480px) {
+   font-size: 14px;
+}
+  text-align: center;
   margin: 0 auto;
   width: 80%;
   padding: 30px;
@@ -44,6 +49,9 @@
     }
   }
   .btns {
+    @media  (max-width: 480px) {
+      width: 95%;
+   }
     margin: 80px auto;
     width: 70%;
     display: flex;
@@ -51,6 +59,11 @@
     flex-wrap: wrap;
 
     button {
+      @media  (max-width: 480px) {
+        font-size: 13px;
+        padding: 7px 3px;
+        margin-top: 5px;
+     }
       border: 1px solid #fff3b0;
       padding: 10px 15px;
       font-size: 18px;

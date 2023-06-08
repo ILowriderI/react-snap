@@ -1,7 +1,13 @@
 .wrap {
-  width: 98%;
+  width: 95%;
   margin: 10px auto;
   .cont {
+
+    @media  (max-width: 480px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 80%;
+    }
     display: flex;
     text-align: center;
    
@@ -12,6 +18,9 @@
     position: relative;
     box-shadow: 0 0 6px 1px #d9ed92;
     input {
+      @media  (max-width: 480px) {
+        border-radius: 30px;
+      }
       width: 70%;
       height: 55px;
       border: none;
@@ -45,6 +54,9 @@
 }
 
 .button{
+  @media  (max-width: 480px) {
+    border-radius: 50%;
+  }
     transition: .3s ease-out;
     cursor: pointer;
     display: flex;
