@@ -18,7 +18,7 @@ const ProductPage = () => {
   const [slides, setSlides] = useState([{ url: "" }]);
   const [date, setDate] = useState([]);
   const errImg = [ { url:defaultImg, }];
-  const urlProd = `http://localhost:8080/product/id/${id}`;
+  const urlProd = `https://spring-snap-itei.onrender.com/product/id/${id}`;
 
  
 

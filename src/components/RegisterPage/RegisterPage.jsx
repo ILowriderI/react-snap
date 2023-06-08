@@ -20,7 +20,8 @@ const RegisterPage = () => {
   const [isNameValid, setIsNameValid] = useState(false);
   const [isPhoneValid, setIsPhoneValid] = useState(false);
   const [isError, setIsError] = useState(false);
-  const urlReg = "http://localhost:8080/auth/register";
+
+  const urlReg ="https://spring-snap-itei.onrender.com/auth/register"
   const dispatch = useDispatch();
   const naigate = useNavigate();
 
@@ -31,7 +32,7 @@ const RegisterPage = () => {
   const phoneRegExp = /^[+]?[(]?[0-9]{3}[)]?[-s.]?[0-9]{3}[-s.]?[0-9]{4,6}$/;
 
   const checkUser = (e) => {
-    getRequest(`http://localhost:8080/auth/user/${e.target.value}`).then(
+    getRequest(`https://spring-snap-itei.onrender.com/auth/user/${e.target.value}`).then(
       ({ data }) => setIsUserPresent(data)
     );
   };
@@ -88,7 +89,7 @@ const RegisterPage = () => {
           })
         );
         getRequestWithToken(
-          `http://localhost:8080/user/${data.userId}`,
+          `https://spring-snap-itei.onrender.com/user/${data.userId}`,
           data.access_token
         ).then(({ data }) => {
           dispatch(setUser(data));

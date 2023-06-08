@@ -16,7 +16,7 @@ const SavedProductsPage = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [isError, setIsError] = useState(false);
 
-  const url = `http://localhost:8080/cart/${userId}`;
+  const url = `https://spring-snap-itei.onrender.com/cart/${userId}`;
   useEffect(() => {
     
     if(isTokenPresent())

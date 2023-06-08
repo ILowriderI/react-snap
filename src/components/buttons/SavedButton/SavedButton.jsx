@@ -12,9 +12,9 @@ const SavedButton = ({ productId }) => {
   const userId = useSelector((state) => state.tokenReducer.item.userId);
   const [isProductAdded, setIsProductAdded] = useState();
 
-  const getSavedUrl = `http://localhost:8080/cart/${userId}`;
-  const saveUrl = `http://localhost:8080/cart/add/${userId}/${productId}`;
-  const removeUrl = `http://localhost:8080/cart/remove/${userId}/${productId}`;
+  const getSavedUrl = `https://spring-snap-itei.onrender.com/cart/${userId}`;
+  const saveUrl = `https://spring-snap-itei.onrender.com/cart/add/${userId}/${productId}`;
+  const removeUrl = `https://spring-snap-itei.onrender.com/cart/remove/${userId}/${productId}`;
 
   const chekAddedProduct = () => {
     getRequestWithToken(getSavedUrl, token).then(({ data }) => {

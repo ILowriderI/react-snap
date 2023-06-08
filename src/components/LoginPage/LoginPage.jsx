@@ -17,10 +17,10 @@ const LoginPage = () => {
   const [isError, setIsError] = useState(false);
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const urlAuth = "http://localhost:8080/auth/authenticate";
+  const urlAuth = "https://spring-snap-itei.onrender.com/auth/authenticate";
 
   const checkUser = (e) => {
-    getRequest(`http://localhost:8080/auth/user/${e.target.value}`).then(
+    getRequest(`https://spring-snap-itei.onrender.com/auth/user/${e.target.value}`).then(
       ({ data }) => setIsUserPresent(data)
     );
   };
@@ -48,7 +48,8 @@ const LoginPage = () => {
             exp: jwtDecode(data.access_token).exp,
           })
         );
-        getRequestWithToken(`http://localhost:8080/user/${data.userId}`,data.access_token).then(({ data }) => {
+        getRequestWithToken(`https://spring-snap-itei.onrender.com/user/${data.userId}`,data.access_token)
+        .then(({ data }) => {
           dispatch(setUser(data));
           navigate("/");
         });

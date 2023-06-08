@@ -24,7 +24,7 @@ const AddPost = () => {
 
   const dispatch = useDispatch();
 
-  const urlAddPost = `http://localhost:8080/product/create/${userId}`;
+  const urlAddPost = `https://spring-snap-itei.onrender.com/product/create/${userId}`;
 
   const post = {
     title: title,

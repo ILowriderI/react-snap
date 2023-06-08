@@ -16,9 +16,9 @@ const HomePage = () => {
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [isError, setIsError] = useState(false);
-  const urlFirstPage = "http://localhost:8080/products?pageNumber=0&size=8";
-  const urlNextPage = `http://localhost:8080/products?pageNumber=${ currentPage + 1}&size=8`;
-  const urlPreviousPage = `http://localhost:8080/products?pageNumber=${ currentPage + 1 }&size=8`;
+  const urlFirstPage = "https://spring-snap-itei.onrender.com/products?pageNumber=0&size=8";
+  const urlNextPage = `https://spring-snap-itei.onrender.com/products?pageNumber=${ currentPage + 1}&size=8`;
+  const urlPreviousPage = `https://spring-snap-itei.onrender.com/products?pageNumber=${ currentPage + 1 }&size=8`;
 
   const getData = () => {
     getRequest(urlFirstPage)

@@ -19,9 +19,9 @@ const ChatPage = () => {
   const [chatUserName, setChatUserName] = useState("");
   const [isError,setIsError] = useState(false);
   
-  const urlSendMessage = `http://localhost:8080/message/${userId}/send/${secondUserId}`;
-  const urlGetMessages = `http://localhost:8080/chat/messages/${id}/${userId}`;
-  const urlGetUser = "http://localhost:8080/user/";
+  const urlSendMessage = `https://spring-snap-itei.onrender.com/message/${userId}/send/${secondUserId}`;
+  const urlGetMessages = `https://spring-snap-itei.onrender.com/chat/messages/${id}/${userId}`;
+  const urlGetUser = "https://spring-snap-itei.onrender.com/user/";
 
   const getChatData = () => {
 getRequestWithToken(urlGetMessages,token)

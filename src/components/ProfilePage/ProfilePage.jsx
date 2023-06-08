@@ -21,7 +21,7 @@ const ProfilePage = () => {
   const [isError,setIsError] = useState(false)
   const dispatch = useDispatch();
 
-  const urlGetUser = `http://localhost:8080/user/${userId}`;
+  const urlGetUser = `https://spring-snap-itei.onrender.com/user/${userId}`;
 
   const getProductList = () => {
     getRequestWithToken(urlGetUser,token)

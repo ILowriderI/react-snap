@@ -15,7 +15,7 @@ const AddImgToPost = ({ postId }) => {
   const token = useSelector((state) => state.tokenReducer.item.access_token);
 
   const urlSaveImg = "https://api.imgbb.com/1/upload?&key=11e3a4e95a0b6e75bb573a0db1f3795a";
-  const urlAddImgToPost = `http://localhost:8080/product/add-image/${postId}`;
+  const urlAddImgToPost = `https://spring-snap-itei.onrender.com/product/add-image/${postId}`;
 
   let payload = new FormData();
   payload.append("image", img);

@@ -12,8 +12,8 @@ const ChatItem = ({ senderId, chatId }) => {
   const [message, setMessage] = useState("");
   const [isRead, setIsRead] = useState();
 
-  const urlSender = `http://localhost:8080/user/${senderId}`;
-  const urlLastMessage = `http://localhost:8080/chat/message/last/${chatId}`;
+  const urlSender = `https://spring-snap-itei.onrender.com/user/${senderId}`;
+  const urlLastMessage = `https://spring-snap-itei.onrender.com/chat/message/last/${chatId}`;
 
 
   useEffect(() => {
