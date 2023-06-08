@@ -1,0 +1,38 @@
+.wrap {
+  width: 95%;
+  margin: 30px auto;
+ 
+  h1 {
+    text-align: center;
+  }
+  color: #f8f9fa;
+  ul {
+    list-style: none;
+  }
+  .description {
+    width: 95%;
+    min-height: 150px;
+    border-radius: 15px;
+    box-shadow: 0 0 4px 1px #99d98c;
+    margin: 5px auto;
+    padding: 10px;
+    background-image: linear-gradient(to right, #001524 0%, black 100%);
+  }
+  .message {
+    font-weight: 600;
+    font-size: 20px;
+    a {
+      color: #dddf00;
+      margin: 0 10px;
+    }
+  }
+}
+.none {
+  display: none;
+}
+.save_btn {
+  width: 50%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}

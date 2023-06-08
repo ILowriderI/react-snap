@@ -1,0 +1,21 @@
+.wrap{
+     width: 600px;
+    margin:  20px auto;
+    line-height: 1.8;
+    color: #ffc300;
+    font-size: 24px;
+    text-align: center;
+    text-shadow: 0 0 3px #ffe8d6;
+    -webkit-text-stroke-color:#ffc300 ;
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-fill-color: transparent;
+    video{
+        max-width: 90%;
+        height: auto;
+        border-radius: 20px;
+        display: block;
+        margin: 50px auto;
+        border-radius: 20px;
+        box-shadow:  0 0 8px 3px #8d0801;
+    }
+}

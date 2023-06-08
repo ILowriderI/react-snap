@@ -1,0 +1,85 @@
+.wrap {
+  width: 90%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+
+  span {
+    color: #f8f7ff;
+    width: 40%;
+    text-align: right;
+  }
+  h1 {
+    color: #f8f7ff;
+    text-align: center;
+    img {
+      width: 40px;
+      height: 40px;
+      margin-left: 20px;
+    }
+  }
+  input {
+    margin-top: 20px;
+    width: 35%;
+    height: 30px;
+    border-radius: 20px;
+    padding: 5px 20px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    &:focus {
+      box-shadow: 0 0 4px 2px #a5ffd6;
+    }
+    .css-upazkr-container {
+      border-radius: 20px;
+    }
+  }
+  textarea {
+    margin-top: 25px;
+    border: none;
+    width: 35%;
+    height: 200px;
+    border-radius: 20px;
+    padding: 5px 20px;
+    font-size: 16px;
+    outline: none;
+    &:focus {
+      box-shadow: 0 0 4px 2px #a5ffd6;
+    }
+  }
+  .msg {
+    color: #f8f7ff;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+  }
+  button {
+    border: none;
+    width: 160px;
+    border-radius: 30px;
+    cursor: pointer;
+    height: 45px;
+    margin: 50px auto;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #f6fff8;
+    color: #6a040f;
+    background-color: #fdca40;
+    border: 2px solid #ff006b;
+    color: #fff;
+    transition: 0.3s ease-out;
+    &:hover {
+      scale: 1.05;
+      color: #fdca40;
+      background-color: #fff;
+    }
+  }
+
+  .img {
+    width: 45px;
+    height: 45px;
+    margin: 0px auto;
+    display: block;
+  }
+}

@@ -1,0 +1,33 @@
+.wrap {
+  margin: 60px auto;
+  max-width: 80%;
+  border: 1px solid wheat;
+  box-shadow: 0 0 6px 1px #ffd166;
+  color: wheat;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  border-radius: 25px;
+  position: relative;
+  font-size: 18px;
+  img {
+    width: 110px;
+    height: 110px;
+    border-radius: 15px;
+  }
+  .button {
+    width: 43px;
+    height: 43px;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      background-color: wheat;
+      border-radius: 50%;
+    }
+  }
+}

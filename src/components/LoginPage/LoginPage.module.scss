@@ -1,0 +1,49 @@
+.wrap {
+  width: 95%;
+  margin: 60px auto;
+  h1 {
+    text-align: center;
+    color: wheat;
+  }
+  div {
+    width: 60%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    span {
+      width: 50%;
+      margin: 0px auto;
+      color: #cae9ff;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    input {
+      outline: none;
+      width: 50%;
+      margin: 10px auto;
+      border-radius: 25px;
+      border: none;
+      padding: 10px;
+      transition: 0.3s;
+      &:focus {
+        box-shadow: 0 0 8px 6px #ff7096;
+      }
+    }
+    .register {
+      width: 40%;
+      margin: 10px auto;
+      color: wheat;
+      font-size: 20px;
+      font-weight: 600;
+      border-radius: 25px;
+      padding: 16px;
+      text-align: center;
+      background-color: rgba(220, 220, 220, 0.1);
+      a {
+        color: #70e000;
+      }
+    }
+  }
+}

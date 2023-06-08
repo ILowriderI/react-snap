@@ -1,0 +1,38 @@
+.wrap {
+  margin: 0 auto;
+  width: 90%;
+
+  textarea {
+    background-color: #c0fdfb;
+    width: 100%;
+    min-height: 100px;
+    border-radius: 25px;
+    padding: 15px;
+    &:focus {
+      box-shadow: 0 0 4px 2px #a5ffd6;
+    }
+  }
+  button {
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 25px;
+    padding: 10px 0px;
+    background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+    border: none;
+    color: #d3f8e2;
+    display: block;
+    padding: 10px 10px;
+    margin: 5px auto;
+    transition: 0.2s;
+    &:hover {
+      scale: 1.05;
+      box-shadow: 0 0 4px 2px #f694c1;
+    }
+    img {
+      width: 20px;
+      height: 20px;
+      margin-left: 5px;
+      transform: rotate(320deg);
+    }
+  }
+}

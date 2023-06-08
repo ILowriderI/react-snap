@@ -1,0 +1,19 @@
+.msg {
+  width: 30%;
+  margin: 0px auto;
+  color: wheat;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 25px;
+  padding: 16px;
+  text-align: center;
+  background-color: rgba(220, 220, 220, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  img{
+    width: 40px;
+    height: 40px;
+  }
+}

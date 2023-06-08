@@ -1,0 +1,31 @@
+.wrap{
+    
+    width: 95%;
+    margin: 50px auto;
+    h2{
+        text-align: center;
+        font-size: 28px;
+        color: wheat;
+        font-weight: 600;
+    }
+    .products_cont{
+
+        width: 95%;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        @media  (max-width: 1550px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+         @media  (max-width: 1200px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media  (max-width: 780px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        a{
+            text-decoration: none;
+            margin: 25px auto;
+        }
+    }
+}
