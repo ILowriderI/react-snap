@@ -23,7 +23,7 @@ const ProfileProduct = ({ data, deleteProduct }) => {
       <img
         className={styles.button}
         onClick={() =>
-          deleteProduct(`https://snap-trade.onrender.com/product/delete/${data.id}`)
+          deleteProduct(`https://spring-snap-itei.onrender.com/product/delete/${data.id}`)
         }
         src={deleteIco}
         alt="delete"
