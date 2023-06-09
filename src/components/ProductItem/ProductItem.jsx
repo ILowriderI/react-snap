@@ -12,7 +12,7 @@ const ProductItem = ({ item }) => {
     <div className={styles.wrap}>
       <img className={styles.img} src={url} alt="preview image" />
       <div className={styles.title}>{item.title}</div>
-      <div>{item.price}</div>
+      <div>{item.price} $</div>
       <div>{item.city}</div>
       <div className={styles.right}>
         {date[2]}.{date[1]}.{date[0]}
