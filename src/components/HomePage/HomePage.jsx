@@ -23,7 +23,6 @@ const HomePage = () => {
   const getData = () => {
     getRequest(urlFirstPage)
       .then(({ data }) => {
-        console.log(data);
         setTotalItems(data.total_items);
         setProducts(data.products);
         setTotalPages(data.total_pages);
