@@ -6,7 +6,7 @@ const SkeletonProductItem = (props) => (
     width={310}
     height={390}
     viewBox="0 0 310 390"
-    backgroundColor="#cbb2fe"
+    backgroundColor="rgba(135, 206, 250, 0.45)"
     foregroundColor="#dfe7fd"
     {...props}
   >
