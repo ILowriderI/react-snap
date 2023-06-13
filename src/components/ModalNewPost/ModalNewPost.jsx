@@ -4,7 +4,7 @@ import okIco from "../../img/hand.png";
 
 import styles from "./ModalNewPost.module.scss";
 
-const ModalNewPost = ({ active, setActive, onClickHome }) => {
+const ModalNewPost = ({ active, setActive, onClickHome, onClickAddMore }) => {
   return (
     <div className={active ? cn(styles.modal, styles.active) : styles.modal}>
       <div
@@ -18,6 +18,7 @@ const ModalNewPost = ({ active, setActive, onClickHome }) => {
           </h3>
           <div className={styles.btns}>
             <button onClick={onClickHome}> Home page </button>
+            <button onClick={onClickAddMore}> Add one more</button>
           </div>
         </div>
       </div>
@@ -28,6 +29,7 @@ const ModalNewPost = ({ active, setActive, onClickHome }) => {
 ModalNewPost.propTypes = {
   active: PropTypes.bool,
   onClickHome: PropTypes.func,
+  onClickAddMore: PropTypes.func,
   setActive : PropTypes.func
 };
 

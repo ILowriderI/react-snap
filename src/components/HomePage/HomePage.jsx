@@ -9,6 +9,7 @@ import rightArrow from "../../img/arrow-right.png";
 import leftArrow from "../../img/arrow-left.png";
 import styles from "./HomePage.module.scss";
 
+
 const HomePage = () => {
   const [currentPage, setCurrentPage] = useState();
   const [totalPages, setTotalPages] = useState();

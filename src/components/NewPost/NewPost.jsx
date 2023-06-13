@@ -19,6 +19,11 @@ const NewPost = () => {
   const goHomePage = () => {
     navigate("/");
   };
+  const goAddPost = () => {
+    setActive(false);
+    window.location.reload();
+    window.scrollTo(0, 0);
+  };
  
   useEffect(() => {}, [active]);
 
@@ -42,6 +47,7 @@ const NewPost = () => {
         active={active}
         setActive={setActive}
         onClickHome={goHomePage}
+        onClickAddMore={goAddPost}
       />
     </div>
   );
