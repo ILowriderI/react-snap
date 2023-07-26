@@ -23,7 +23,7 @@ const Header = () => {
   const userId = useSelector((state) => state.tokenReducer.item.userId);
   const token = useSelector((state) => state.tokenReducer.item.access_token);
   const [countMessage, setCountMessage] = useState(0);
-  const urlChat = `https://spring-snap-itei.onrender.com/chats/user/${userId}`;
+  const urlChat = `https://spring-snap-itei.onrender.com/chat/user/${userId}`;
   
 
 

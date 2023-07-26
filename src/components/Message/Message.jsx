@@ -16,7 +16,7 @@ const Message = () => {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [isError,setIsError] = useState(false);
-  const urlChat = `https://spring-snap-itei.onrender.com/chats/user/${item.userId}`;
+  const urlChat = `https://spring-snap-itei.onrender.com/chat/user/${item.userId}`;
 
   useEffect(() => {
     let arrayId = [];

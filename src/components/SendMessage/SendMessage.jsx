@@ -10,7 +10,7 @@ const SendMessage = ({ senderId, recipientId }) => {
   const [message, setMessage] = useState("");
   const [isError, setIsError] = useState(false);
   const token = useSelector((state) => state.tokenReducer.item.access_token);
-  const url = `https://spring-snap-itei.onrender.com/message/${senderId}/send/${recipientId}`;
+  const url = `https://spring-snap-itei.onrender.com/chat/message/${senderId}/send/${recipientId}`;
 
   const onChangeMessage = (e) => {
     setMessage(e.target.value);

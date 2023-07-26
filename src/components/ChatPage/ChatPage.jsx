@@ -19,7 +19,7 @@ const ChatPage = () => {
   const [chatUserName, setChatUserName] = useState("");
   const [isError,setIsError] = useState(false);
   
-  const urlSendMessage = `https://spring-snap-itei.onrender.com/message/${userId}/send/${secondUserId}`;
+  const urlSendMessage = `https://spring-snap-itei.onrender.com/chat/message/${userId}/send/${secondUserId}`;
   const urlGetMessages = `https://spring-snap-itei.onrender.com/chat/messages/${id}/${userId}`;
   const urlGetUser = "https://spring-snap-itei.onrender.com/user/";
 

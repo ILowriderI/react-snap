@@ -22,6 +22,7 @@ const ProfilePage = () => {
   const dispatch = useDispatch();
 
   const urlGetUser = `https://spring-snap-itei.onrender.com/user/${userId}`;
+  const urlLogout = "https://spring-snap-itei.onrender.com/auth/logout"
 
   const getProductList = () => {
     getRequestWithToken(urlGetUser,token)
@@ -31,8 +32,9 @@ const ProfilePage = () => {
   };
 
   const onLogout = () => {
-    dispatch(removeUser())
-    dispatch(removeToken())
+    getRequestWithToken(urlLogout,token);
+    dispatch(removeUser());
+    dispatch(removeToken());
     setIsLogout(true);
   };
 

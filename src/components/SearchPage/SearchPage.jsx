@@ -9,7 +9,7 @@ import styles from "./SearchPage.module.scss";
 const SearchPage = () => {
   const [products, setProducts] = useState([]);
   const [value, setValue] = useState("");
-  const url = `https://spring-snap-itei.onrender.com/products/search/${value}`;
+  const url = `https://spring-snap-itei.onrender.com/product/search/${value}`;
   const inputRef = useRef();
 
   const onChangeInput = (e) => {
