@@ -19,7 +19,7 @@ const HomePage = () => {
   const [isError, setIsError] = useState(false);
   const urlFirstPage = "https://spring-snap-itei.onrender.com/product/all?pageNumber=0&size=8";
   const urlNextPage = `https://spring-snap-itei.onrender.com/product/all?pageNumber=${ currentPage + 1}&size=8`;
-  const urlPreviousPage = `https://spring-snap-itei.onrender.com/products/all?pageNumber=${ currentPage - 1 }&size=8`;
+  const urlPreviousPage = `https://spring-snap-itei.onrender.com/product/all?pageNumber=${ currentPage - 1 }&size=8`;
 
   const getData = () => {
     getRequest(urlFirstPage)
